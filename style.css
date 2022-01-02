@@ -19,13 +19,16 @@ h1{
     background-color: black;
     margin: 50px auto;
     animation-name: blur;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out
+    
 }
 
 @keyframes blur {
     from{
         filter: blur(5px);
         transform: translate(-100%);
+        opacity: 0;
     }
     to{
         filter: blur(0px);
@@ -89,5 +92,5 @@ h1{
 }
 
 .btn_items:hover{
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.438);
 }
